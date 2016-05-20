@@ -31,7 +31,7 @@ def sendmail(subject, from_addr, to_addrs):
 
     s = smtplib.SMTP('smtp.126.com')
     s.ehlo("smtp.126.com")
-    s.login('inmath@126.com', 'bzvohpkupkaofdgb')
+    # s.login('inmath@126.com', 'bzvohpkupkaofdgb')
     print msg.as_string()
     s.sendmail(from_addr, to_addrs, msg.as_string())
     s.quit()
